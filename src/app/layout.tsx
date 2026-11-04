@@ -13,7 +13,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Dark is the standard theme; light applies only when the visitor
+            chose it before (stored) — set before paint to avoid a flash. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('dw-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
+          }}
+        />
+      </head>
       <body className="min-h-screen antialiased">
         <WalletProviders>
           <Header />

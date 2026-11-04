@@ -10,7 +10,7 @@ export default function Home() {
       <section className="rounded-3xl border border-line bg-panel p-6 sm:p-10">
         <div className="flex items-center gap-3">
           <SunMark size={44} />
-          <span className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-bold tracking-wide text-amber-800">
+          <span className="rounded-full border border-notice-line bg-notice-bg px-3 py-1 text-xs font-bold tracking-wide text-notice-text">
             BUILDING NOW — LAUNCHES NOT OPEN YET
           </span>
         </div>
@@ -23,7 +23,7 @@ export default function Home() {
           promised that haven&apos;t paid.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link href="/mechanics" className="rounded-xl bg-accent px-5 py-3 font-bold text-white">
+          <Link href="/mechanics" className="rounded-xl bg-accent px-5 py-3 font-bold text-stone-900">
             Read the mechanics
           </Link>
           <Link href="/configs" className="rounded-xl border border-line bg-bg px-5 py-3 font-bold">

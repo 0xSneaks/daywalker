@@ -58,9 +58,9 @@ export default function ConfigsPage() {
       </section>
 
       {!DAYWALKER_CONFIGS_CREATED && (
-        <section className="rounded-2xl border border-amber-300 bg-amber-50 p-6">
-          <h2 className="font-extrabold text-amber-900">Daywalker&apos;s own configs: not created yet</h2>
-          <p className="mt-1 text-amber-900/80">
+        <section className="rounded-2xl border border-notice-line bg-notice-bg p-6">
+          <h2 className="font-extrabold text-notice-text">Daywalker&apos;s own configs: not created yet</h2>
+          <p className="mt-1 text-notice-text opacity-80">
             Daywalker has not created its configs yet, so there are no Daywalker fee numbers to
             publish. When they are created, their addresses and full decoded schedules appear on
             this page — before the first coin launches on them. The two configs below are live

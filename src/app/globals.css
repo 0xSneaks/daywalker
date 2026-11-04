@@ -1,16 +1,95 @@
 @import "tailwindcss";
 
+/* Daywalker themes — DARK IS THE STANDARD (Sneaks, 2026-11-03).
+   Dark values live in :root and apply by default; the light theme is an
+   optional toggle that sets data-theme="light" on <html>. All colors flow
+   through the variables below — components never hardcode a palette. */
 @theme inline {
-  --color-bg: #faf7f0;
-  --color-panel: #ffffff;
-  --color-line: #e7dfca;
-  --color-text: #1c1917;
-  --color-dim: #6f6a5e;
-  --color-accent: #d97706;
-  --color-accent-dim: #92400e;
-  --color-sun: #f59e0b;
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-dim: var(--dim);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-banner-bg: var(--banner-bg);
+  --color-banner-text: var(--banner-text);
+  --color-banner-line: var(--banner-line);
+  --color-notice-bg: var(--notice-bg);
+  --color-notice-text: var(--notice-text);
+  --color-notice-line: var(--notice-line);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger-text: var(--danger-text);
+  --color-danger-line: var(--danger-line);
+  --color-chip-green-bg: var(--chip-green-bg);
+  --color-chip-green-text: var(--chip-green-text);
+  --color-chip-green-line: var(--chip-green-line);
+  --color-chip-blue-bg: var(--chip-blue-bg);
+  --color-chip-blue-text: var(--chip-blue-text);
+  --color-chip-blue-line: var(--chip-blue-line);
+  --color-chip-violet-bg: var(--chip-violet-bg);
+  --color-chip-violet-text: var(--chip-violet-text);
+  --color-chip-violet-line: var(--chip-violet-line);
   --font-sans: ui-sans-system, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0d;
+  --panel: #141419;
+  --line: #28282f;
+  --text: #f5f2ea;
+  --dim: #a8a29a;
+  --accent: #f59e0b;
+  --accent-dim: #fbbf24;
+  --banner-bg: #2a1d05;
+  --banner-text: #fcd34d;
+  --banner-line: #92600a;
+  --notice-bg: #231a06;
+  --notice-text: #fde68a;
+  --notice-line: #92600a;
+  --danger-bg: #2b0f0f;
+  --danger-text: #fca5a5;
+  --danger-line: #7f1d1d;
+  --chip-green-bg: #052e22;
+  --chip-green-text: #6ee7b7;
+  --chip-green-line: #065f46;
+  --chip-blue-bg: #0a2438;
+  --chip-blue-text: #7dd3fc;
+  --chip-blue-line: #075985;
+  --chip-violet-bg: #221238;
+  --chip-violet-text: #c4b5fd;
+  --chip-violet-line: #5b21b6;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #faf7f0;
+  --panel: #ffffff;
+  --line: #e7dfca;
+  --text: #1c1917;
+  --dim: #6f6a5e;
+  --accent: #d97706;
+  --accent-dim: #92400e;
+  --banner-bg: #fef3c7;
+  --banner-text: #78350f;
+  --banner-line: #fcd34d;
+  --notice-bg: #fffbeb;
+  --notice-text: #78350f;
+  --notice-line: #fcd34d;
+  --danger-bg: #fef2f2;
+  --danger-text: #7f1d1d;
+  --danger-line: #fecaca;
+  --chip-green-bg: #ecfdf5;
+  --chip-green-text: #065f46;
+  --chip-green-line: #6ee7b7;
+  --chip-blue-bg: #f0f9ff;
+  --chip-blue-text: #075985;
+  --chip-blue-line: #7dd3fc;
+  --chip-violet-bg: #f5f3ff;
+  --chip-violet-text: #5b21b6;
+  --chip-violet-line: #c4b5fd;
 }
 
 body {

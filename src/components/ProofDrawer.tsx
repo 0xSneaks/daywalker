@@ -36,7 +36,7 @@ export default function ProofDrawer({ feature }: { feature: Feature }) {
             EXIST. When the rail or integration is live, its pointers appear here.
           </p>
         )}
-        <p className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-red-900">
+        <p className="rounded-lg border border-danger-line bg-danger-bg px-3 py-2 text-danger-text">
           <b>Does not protect against:</b> {feature.doesNotProtect}
         </p>
         <p className="text-xs text-dim">

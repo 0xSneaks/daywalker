@@ -1,9 +1,9 @@
 import type { RailTag } from "@/lib/features";
 
 const STYLES: Record<RailTag, string> = {
-  "RAILS EXIST": "border-emerald-600/40 bg-emerald-50 text-emerald-800",
-  "VIA INTEGRATION": "border-sky-600/40 bg-sky-50 text-sky-800",
-  VISION: "border-violet-600/40 bg-violet-50 text-violet-800",
+  "RAILS EXIST": "border-chip-green-line bg-chip-green-bg text-chip-green-text",
+  "VIA INTEGRATION": "border-chip-blue-line bg-chip-blue-bg text-chip-blue-text",
+  VISION: "border-chip-violet-line bg-chip-violet-bg text-chip-violet-text",
 };
 
 export default function Chip({ tag, scope }: { tag: RailTag; scope?: string }) {

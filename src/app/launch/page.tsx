@@ -14,7 +14,7 @@ export default function LaunchPage() {
   return (
     <div className="space-y-5">
       <section className="rounded-3xl border border-line bg-panel p-6 sm:p-8">
-        <span className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-bold tracking-wide text-amber-800">
+        <span className="rounded-full border border-notice-line bg-notice-bg px-3 py-1 text-xs font-bold tracking-wide text-notice-text">
           NOT OPEN YET
         </span>
         <h1 className="mt-4 text-2xl font-extrabold sm:text-3xl">Launches are not open yet</h1>

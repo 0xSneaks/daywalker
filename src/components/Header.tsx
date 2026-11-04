@@ -1,6 +1,7 @@
 import Link from "next/link";
 import WalletButton from "./WalletButton";
 import SunMark from "./SunMark";
+import ThemeToggle from "./ThemeToggle";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -19,7 +20,10 @@ export default function Header() {
             <SunMark size={30} />
             DAY<span className="text-accent">WALKER</span>
           </Link>
-          <WalletButton />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <WalletButton />
+          </div>
         </div>
         <nav className="mt-2 flex gap-0.5 overflow-x-auto text-[13px]">
           {NAV.map((n) => (
