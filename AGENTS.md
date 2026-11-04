@@ -15,6 +15,16 @@ on Meteora's Dynamic Bonding Curve program with its OWN partner configs.
 Site v1 is **informational only**: no launch or trade functions are wired to
 anything real. Scaffolded from the AnonPad codebase (Next 16 + Tailwind v4).
 
+## Theme
+- **DARK is the standard** (Sneaks, 2026-11-03): dark tokens are the default in
+  `src/app/globals.css` (`:root`); **light is an optional toggle**
+  (`data-theme="light"`, header `ThemeToggle`, persisted in localStorage
+  `dw-theme`, applied pre-paint by the layout init script). NEVER ship light
+  as the default. All colors flow through the CSS variables — components must
+  not hardcode palette classes. Dark: bg `#0a0a0d`, panel `#141419`,
+  line `#28282f`, text `#f5f2ea`, accent `#f59e0b`. Light: bg `#faf7f0`,
+  panel `#ffffff`, accent `#d97706`.
+
 ## Names and copy law
 - Product name is **Daywalker**. Never "Ombro" (rug-associated). No brand/IP
   names on house coins.
